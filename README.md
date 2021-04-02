@@ -19,6 +19,14 @@
 - binwalk : Helps to check files contained in a file.
 - steghide : For hiding a file inside an image
 - peda : python assitant for GDB
+- pwntools : A big tool suite covering almost every ascpect of binary exploitation.
+- <a href="https://github.com/payloadbox/xss-payload-list">xss-payloads</a> : Contains many payloads for XSS attacks.
+- <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XSS%20Injection/README.md">More xss-payloads</a> : Contains many payloads for XSS attacks.
+
+#### Other tools (unexplored)
+
+- <a href="https://github.com/volatilityfoundation/volatility">Volatility</a> : Helps to analyze memory dump for various types of os.
+- burp suite : For finding bugs on web sites.
 
 #### Some frequently used commands
 
@@ -28,3 +36,13 @@
 - file : gives information about the file.
 - hexdump : dumps the executale in hex format
 - objdump : gives the disassembly of the executable
+
+#### Some online tools
+
+- https://www.xarg.org/tools/caesar-cipher/ : Decode caesar-cipher online
+- https://www.base64decode.org/ : For encoding and decoding base 64 key
+- https://hookbin.com/ : create dummy endpoints for capturing cookies
+
+#### Some amazing articles
+
+- https://insomnihackdotme.files.wordpress.com/2015/03/copypest.pdf : html and xss injection using Copy & Paste
