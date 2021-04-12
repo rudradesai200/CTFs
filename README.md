@@ -8,6 +8,7 @@
 - https://dev.to/atan/what-is-ctf-and-how-to-get-started-3f04
 - https://trailofbits.github.io/ctf/forensics/ : More tools
 - https://ctftime.org/ : Contains schedule for all the CTFs and their resources.
+- https://int0x33.medium.com/day-18-essential-ctf-tools-1f9af1552214 : Some more tools
 
 #### My tools chest
 
