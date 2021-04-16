@@ -31,6 +31,7 @@
 - <a href="https://github.com/JonathanSalwan/ROPgadget">ROPgadget</a> : Tool to get all the ROP gadgets within an executable
 - <a href="https://github.com/david942j/one_gadget">One_gadget</a> : Ruby gem to find "execve('/bin/sh', NULL, NULL)" gadget within an executable.
 - <a href="https://wiremask.eu/tools/buffer-overflow-pattern-generator/?">Offset finder</a> : Online tool to find offset for buffer overflow. 
+- <a href="https://libc.blukat.me/">Libc Database</a> : Online tool to find glibc version from offsets of some functions.
 
 #### Other useful tools
 - ghidra : Software reverse engineering tool. Mainly for static analysis.
