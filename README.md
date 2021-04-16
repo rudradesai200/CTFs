@@ -9,6 +9,7 @@
 - https://trailofbits.github.io/ctf/forensics/ : More tools
 - https://ctftime.org/ : Contains schedule for all the CTFs and their resources.
 - https://int0x33.medium.com/day-18-essential-ctf-tools-1f9af1552214 : Some more tools
+- http://shell-storm.org/shellcode/ : Contains many shell codes for faster exploitation. 
 
 #### My tools chest
 
