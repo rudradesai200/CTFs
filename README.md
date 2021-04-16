@@ -17,17 +17,25 @@
 #### Web Exploitation Tools
 - <a href="https://github.com/payloadbox/xss-payload-list">xss-payloads</a> : Contains many payloads for XSS attacks.
 - <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XSS%20Injection/README.md">More xss-payloads</a> : Contains many payloads for XSS attacks.
+- <a href="https://hookbin.com/">Hookbin.com</a> : create dummy endpoints for capturing cookies
 
-#### Forensics Tool chest
-- wireshark : For sniffing packets and network related activities.
+#### Networking
+- <a href="https://www.wireshark.org/">Wireshark</a> : For sniffing packets and network related activities.
+- <a href="https://zmap.io/">zmap</a> : An open source network scanner 
+- <a href="https://nmap.org/"></a> : An open source utility for network discovery and security auditing.
+
+#### Binary Exploitation Tool chest
+- peda : python assitant for GDB
+- <a href="https://github.com/Gallopsled/pwntools">pwntools</a> : A big tool suite covering almost every ascpect of binary exploitation.
+- <a href="https://github.com/hellman/libformatstr">libformatstr</a> : Python library for easier format string attacks
+- <a href="https://github.com/JonathanSalwan/ROPgadget">ROPgadget</a> : Tool to get all the ROP gadgets within an executable
+- <a href="https://github.com/david942j/one_gadget">One_gadget</a> : Ruby gem to find "execve('/bin/sh', NULL, NULL)" gadget within an executable.
+
+#### Other useful tools
 - ghidra : Software reverse engineering tool. Mainly for static analysis.
 - exiftool : Helps in analyzsing image headers
 - binwalk : Helps to check files contained in a file.
 - steghide : For hiding a file inside an image
-
-#### Binary Exploitation Tool chest
-- peda : python assitant for GDB
-- pwntools : A big tool suite covering almost every ascpect of binary exploitation.
 
 #### Frequently used shell commands
 - wget : For downloading files
