@@ -30,6 +30,7 @@
 - <a href="https://github.com/hellman/libformatstr">libformatstr</a> : Python library for easier format string attacks
 - <a href="https://github.com/JonathanSalwan/ROPgadget">ROPgadget</a> : Tool to get all the ROP gadgets within an executable
 - <a href="https://github.com/david942j/one_gadget">One_gadget</a> : Ruby gem to find "execve('/bin/sh', NULL, NULL)" gadget within an executable.
+- <a href="https://projects.jason-rush.com/tools/buffer-overflow-eip-offset-string-generator/">Offset finder</a> : Online tool to find offset for buffer overflow. 
 
 #### Other useful tools
 - ghidra : Software reverse engineering tool. Mainly for static analysis.
