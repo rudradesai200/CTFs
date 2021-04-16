@@ -25,7 +25,7 @@
 - <a href="https://nmap.org/"></a> : An open source utility for network discovery and security auditing.
 
 #### Binary Exploitation Tool chest
-- peda : python assitant for GDB
+- <a href="https://github.com/pwndbg/pwndbg">pwndgb</a> : A python assisted gdb extension for easier binary debugging.
 - <a href="https://github.com/Gallopsled/pwntools">pwntools</a> : A big tool suite covering almost every ascpect of binary exploitation.
 - <a href="https://github.com/hellman/libformatstr">libformatstr</a> : Python library for easier format string attacks
 - <a href="https://github.com/JonathanSalwan/ROPgadget">ROPgadget</a> : Tool to get all the ROP gadgets within an executable
@@ -44,6 +44,10 @@
 - file : gives information about the file.
 - hexdump : dumps the executale in hex format
 - objdump : gives the disassembly of the executable
+- readelf : Displays information from any ELF format object file.
+- nm : Lists symbols from object files.
+- strings : Lists printable strings from files.
+- strip : Discards symbols.
 - nc : For sending various types of requests on a specific IP
 - telnet : Telnet is an application protocol used on the Internet or local area network to provide a bidirectional interactive text-oriented communication facility using a virtual terminal connection.
 
