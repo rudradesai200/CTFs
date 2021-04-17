@@ -10,6 +10,7 @@
 - https://trailofbits.github.io/ctf/forensics/ : More tools
 - https://int0x33.medium.com/day-18-essential-ctf-tools-1f9af1552214 : Some more tools
 - http://shell-storm.org/shellcode/ : Contains many shell codes for faster exploitation. 
+- https://www.youtube.com/watch?v=EmLfoR-k_l0&list=PL1H1sBF1VAKVg451vJ-rx0y_ZuQMHPamH : Solved Binary Exploitation CTF challenges By John Hammond
 
 #### Good cybersecurity articles and blogs
 - https://insomnihackdotme.files.wordpress.com/2015/03/copypest.pdf : html and xss injection using Copy & Paste
