@@ -35,10 +35,10 @@
 - <a href="https://libc.blukat.me/">Libc Database</a> : Online tool to find glibc version from offsets of some functions.
 
 #### Other useful tools
-- ghidra : Software reverse engineering tool. Mainly for static analysis.
-- exiftool : Helps in analyzsing image headers
-- binwalk : Helps to check files contained in a file.
-- steghide : For hiding a file inside an image
+- <a href="https://ghidra-sre.org/">ghidra</a> : Software reverse engineering tool. Mainly for static analysis.
+- <a href="https://exiftool.org/">exiftool</a> : Helps in analyzsing image headers
+- <a href="https://github.com/ReFirmLabs/binwalk">binwalk</a> : Helps to check files contained in a file.
+- <a href="https://github.com/StefanoDeVuono/steghide">steghide</a> : For hiding a file inside an image
 
 #### Frequently used shell commands
 - wget : For downloading files
@@ -62,7 +62,6 @@
 #### Todo list (unexplored tools)
 
 - <a href="https://github.com/volatilityfoundation/volatility">Volatility</a> : Helps to analyze memory dump for various types of os.
-- burp suite : For finding bugs on web sites.
-- caronte : web requests sniffing. 
-- metasploit
-# SSE
+- <a href="https://portswigger.net/burp">burp suite</a> : For finding bugs on web sites.
+- <a href="https://github.com/eciavatta/caronte">caronte</a> : web requests sniffing. 
+- <a href="https://www.metasploit.com/">metasploit</a> : penetration testing framework
