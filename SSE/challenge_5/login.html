@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<style type="text/css">tm {display: inline;}bm {background: url("resource://textmarker-at-underflyingbirches-dot-org/data/images/bm.png") no-repeat 6px center #eee;height: 22px;position: fixed;right: 0;top: 1px;display: block;width: 30px;z-index: 2147483647;cursor: pointer;border: 1px solid #ccc;}bm:hover {background-color: #c8c8c8;}</style></head>
+<body>
+<script src="4-login_files/sjcl.js"></script>
+<script src="4-login_files/sha256.js"></script>
+<script src="4-login_files/codecString.js"></script>
+<script src="4-login_files/bitArray.js"></script>
+
+
+<script>
+function decimalToHexString(number)
+{
+    if (number < 0)
+    {
+        number = 0xFFFFFFFF + number + 1;
+    }
+
+    return number.toString(16).toUpperCase();
+}
+
+function printHash(){
+
+    var hash_result="";
+    var pwd_hash = sjcl.hash.sha256.hash(document.getElementById("pwd").value);
+
+    for(i=0;i<8;i++){
+        hash_result = hash_result+decimalToHexString(pwd_hash[i]);
+    }
+    if(document.getElementById("username").value == "superuser")
+    {
+        if(hash_result.toUpperCase() == "B8960D9B21A06734A678D9D960B7A3BF73C81C089DFD7B9070922C2AF6E635A5".toUpperCase())
+        {
+            alert("Congratulations!!!. You got it!! \n Flag is CTF2021{" + document.getElementById("pwd").value +"}");
+        }
+        else{
+            alert("Better luck next time!!");
+        }
+    }
+    else{
+        alert("You are not an administrator. This incident will be reported :P");
+    }
+}
+</script>
+
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: grey;  
+}  
+button {   
+       background-color: black;   
+       width: 17%;  
+        color: white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: lightblue;  
+    }   
+</style>   
+<body>    
+    <center> <h1> Student Login Form </h1> </center>   
+    <form>  
+        <div class="container">   
+            <center><label>Username : </label>   
+            <input id="username" placeholder="Enter Username" name="username" required><br>
+            <label>Password : </label>  
+			<input id="pwd" placeholder="Enter Password" type="password"><br></center>
+            <center> <button onclick="printHash()"> Login </button> </center> 
+        </div>   
+    </form>     
+</body> 
+
+</body></html>
