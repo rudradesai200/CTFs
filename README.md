@@ -23,7 +23,7 @@
 #### Networking
 - <a href="https://www.wireshark.org/">Wireshark</a> : For sniffing packets and network related activities.
 - <a href="https://zmap.io/">zmap</a> : An open source network scanner 
-- <a href="https://nmap.org/"></a> : An open source utility for network discovery and security auditing.
+- <a href="https://nmap.org/">nmap</a> : An open source utility for network discovery and security auditing.
 
 #### Binary Exploitation Tool chest
 - <a href="https://github.com/pwndbg/pwndbg">pwndgb</a> : A python assisted gdb extension for easier binary debugging.
