@@ -20,6 +20,7 @@
 
 #### Web Exploitation Tools
 
+- <a href="https://github.com/swisskyrepo/PayloadsAllTheThings">Payloads about everything</a> : Contains many payloads for vatious types of attacks.
 - <a href="https://github.com/payloadbox/xss-payload-list">xss-payloads</a> : Contains many payloads for XSS attacks.
 - <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XSS%20Injection/README.md">More xss-payloads</a> : Contains many payloads for XSS attacks.
 - <a href="https://hookbin.com/">Hookbin.com</a> : create dummy endpoints for capturing cookies
